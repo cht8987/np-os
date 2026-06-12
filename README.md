@@ -2,7 +2,7 @@
 
 > Personal OS 的官方介绍站 · Apple 风格静态网站，纯 HTML/CSS/JS，零构建零依赖。
 
-**Live**: deployed on Vercel
+**Live**: https://lotus-os-rouge.vercel.app
 
 ## 这是什么
 

@@ -29,22 +29,24 @@ const countIO = new IntersectionObserver((entries) => {
 }, { threshold: 0.6 });
 document.querySelectorAll(".stat-num").forEach((el) => countIO.observe(el));
 
-// Typing demo → cards bloom
+// Typing demo → cards bloom (sentence follows the active language)
 const demo = document.querySelector(".demo");
 const typed = document.getElementById("typed");
-const SENTENCE = "今天定下了项目架构。记得明天给服务器换证书。午饭花了38块。";
 let demoPlayed = false;
 
 const demoIO = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
     if (!e.isIntersecting || demoPlayed) return;
     demoPlayed = true;
+    window.npDemoPlayed = true;
     demoIO.unobserve(e.target);
+    const sentence = (window.NP_SENTENCES || {})[window.npLang || "zh"] || "";
+    const delay = sentence.length > 40 ? 32 : 55; // EN sentence is longer — type faster
     let i = 0;
     const type = () => {
-      if (i <= SENTENCE.length) {
-        typed.textContent = SENTENCE.slice(0, i++);
-        setTimeout(type, 55);
+      if (i <= sentence.length) {
+        typed.textContent = sentence.slice(0, i++);
+        setTimeout(type, delay);
       } else {
         setTimeout(() => demo.classList.add("cards-in"), 350);
       }

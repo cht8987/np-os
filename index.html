@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NP-OS · NEW PERSONAL OS — 你的第二大脑操作系统</title>
-<meta name="description" content="NP-OS（NEW PERSONAL OS）— 开源个人 AI 操作系统生态。第二大脑 · WIKI 知识库 · 笔记 · 知识管理 · 规划 · 个人助理，长在纯 Markdown 上，数据永远属于你。">
+<meta name="description" content="NP-OS（NEW PERSONAL OS）— 开源个人 AI 操作系统生态。第二大脑 · WIKI 知识库 · 笔记 · 知识管理 · 规划 · 个人助理，长在纯 Markdown 上，数据永远属于你。Open-source personal AI operating system ecosystem.">
 <meta property="og:title" content="NP-OS · NEW PERSONAL OS — 你的第二大脑操作系统">
-<meta property="og:description" content="一次输入，自动变成日记、待办、账单。开源的个人 AI 操作系统生态。">
+<meta property="og:description" content="一次输入，自动变成日记、待办、账单。开源的个人 AI 操作系统生态。One input — auto-sorted into journal, tasks and ledger.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,15 +17,18 @@
   <div class="nav-inner">
     <a href="#top" class="nav-logo">🧠 <span>NP-OS</span></a>
     <div class="nav-links">
-      <a href="#ecosystem">生态</a>
-      <a href="#magic">体验</a>
-      <a href="#brain">第二大脑</a>
-      <a href="#features">功能</a>
-      <a href="#loop">架构</a>
-      <a href="#tech">技术</a>
-      <a href="#compare">性价比</a>
+      <a href="#ecosystem" data-i18n="nav.eco">生态</a>
+      <a href="#magic" data-i18n="nav.demo">体验</a>
+      <a href="#brain" data-i18n="nav.brain">第二大脑</a>
+      <a href="#features" data-i18n="nav.features">功能</a>
+      <a href="#loop" data-i18n="nav.loop">架构</a>
+      <a href="#tech" data-i18n="nav.tech">技术</a>
+      <a href="#compare" data-i18n="nav.compare">性价比</a>
     </div>
-    <a href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener" class="nav-cta">GitHub ↗</a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language / 切换语言">EN</button>
+      <a href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener" class="nav-cta">GitHub ↗</a>
+    </div>
   </div>
 </nav>
 
@@ -47,24 +50,24 @@
     </svg>
   </div>
 
-  <p class="hero-eyebrow reveal">NEW PERSONAL OS · 开源个人 AI 操作系统生态</p>
+  <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">NEW PERSONAL OS · 开源个人 AI 操作系统生态</p>
   <h1 class="hero-title">
-    <span class="line reveal d1">不止是笔记，</span>
-    <span class="line grad reveal d2">是你的第二大脑 OS。</span>
+    <span class="line reveal d1" data-i18n="hero.t1">不止是笔记，</span>
+    <span class="line grad reveal d2" data-i18n="hero.t2">是你的第二大脑 OS。</span>
   </h1>
-  <p class="hero-sub reveal d3">
+  <p class="hero-sub reveal d3" data-i18n="hero.sub">
     NP-OS 把 WIKI 知识库、笔记、知识管理、规划与 AI 个人助理<br>
     整合成一个长在纯 Markdown 上的操作系统 —— 你只管丢想法，数据永远属于你。
   </p>
   <div class="hero-actions reveal d4">
-    <a class="btn btn-primary" href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener">开始使用 — 免费开源</a>
-    <a class="btn btn-ghost" href="#ecosystem">了解 OS 生态 ↓</a>
+    <a class="btn btn-primary" href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener" data-i18n="hero.cta1">开始使用 — 免费开源</a>
+    <a class="btn btn-ghost" href="#ecosystem" data-i18n="hero.cta2">了解 OS 生态 ↓</a>
   </div>
   <div class="hero-stats reveal d5">
-    <div class="stat"><span class="stat-num" data-count="0">0</span><span class="stat-label">第三方依赖</span></div>
-    <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">大生态组件</span></div>
-    <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">类实体自动分流</span></div>
-    <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% 数据自有产权</span></div>
+    <div class="stat"><span class="stat-num" data-count="0">0</span><span class="stat-label" data-i18n="stat.1">第三方依赖</span></div>
+    <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label" data-i18n="stat.2">大生态组件</span></div>
+    <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label" data-i18n="stat.3">类实体自动分流</span></div>
+    <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label" data-i18n="stat.4">% 数据自有产权</span></div>
   </div>
   <div class="scroll-hint" aria-hidden="true"><span></span></div>
 </header>
@@ -72,57 +75,57 @@
 <!-- ════════ ECOSYSTEM ════════ -->
 <section class="section" id="ecosystem">
   <p class="eyebrow reveal">The Ecosystem</p>
-  <h2 class="h2 reveal">不是一个 App，<span class="grad">是一个 OS 生态。</span></h2>
-  <p class="lead reveal">桌面核心、移动终端、网关、记忆引擎、方法论、备份链路 —— 六大组件各司其职，<br>每一层都可替换、可扩展、可自托管。这才叫操作系统。</p>
+  <h2 class="h2 reveal" data-i18n="eco.h2">不是一个 App，<span class="grad">是一个 OS 生态。</span></h2>
+  <p class="lead reveal" data-i18n="eco.lead">桌面核心、移动终端、网关、记忆引擎、方法论、备份链路 —— 六大组件各司其职，<br>每一层都可替换、可扩展、可自托管。这才叫操作系统。</p>
 
   <div class="eco-grid">
     <a class="eco-card eco-main reveal" href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener">
-      <span class="ec-badge">核心 · v0.7.1</span>
+      <span class="ec-badge" data-i18n="eco.b1">核心 · v0.7.1</span>
       <span class="ec-icon">🧠</span>
       <h3>personal-os</h3>
-      <p>桌面端核心系统：vault 模板 + rtk 零依赖引擎 + 自带 Obsidian 插件 + Hermes 夜间管家 + install.sh 一键安装。</p>
+      <p data-i18n="eco.d1">桌面端核心系统：vault 模板 + rtk 零依赖引擎 + 自带 Obsidian 插件 + Hermes 夜间管家 + install.sh 一键安装。</p>
       <span class="ec-link">github.com/cht8987/personal-os ↗</span>
     </a>
     <a class="eco-card reveal" href="https://github.com/cht8987/osmind-app" target="_blank" rel="noopener">
-      <span class="ec-badge">移动端</span>
+      <span class="ec-badge" data-i18n="eco.b2">移动端</span>
       <span class="ec-icon">📱</span>
       <h3>OSMIND App</h3>
-      <p>口袋里的捕获终端：文字 / 语音 / PDF / 网页一键投递，离线账本，AI 聊天，PWA 装进主屏幕。</p>
+      <p data-i18n="eco.d2">口袋里的捕获终端：文字 / 语音 / PDF / 网页一键投递，离线账本，AI 聊天，PWA 装进主屏幕。</p>
       <span class="ec-link">github.com/cht8987/osmind-app ↗</span>
     </a>
     <div class="eco-card reveal">
-      <span class="ec-badge">网关</span>
+      <span class="ec-badge" data-i18n="eco.b3">网关</span>
       <span class="ec-icon">🚪</span>
       <h3>OSMIND Gateway</h3>
-      <p>手机的唯一写入口：本地 HTTP 网关，配对 Token 鉴权，内容提取管线，输入永不丢失。</p>
+      <p data-i18n="eco.d3">手机的唯一写入口：本地 HTTP 网关，配对 Token 鉴权，内容提取管线，输入永不丢失。</p>
     </div>
     <div class="eco-card reveal">
-      <span class="ec-badge">记忆引擎</span>
+      <span class="ec-badge" data-i18n="eco.b4">记忆引擎</span>
       <span class="ec-icon">🔍</span>
       <h3>Hindsight</h3>
-      <p>本地语义记忆引擎：OS / 项目 / 学习三个记忆库，向量检索，让 AI 真的「记得你」。</p>
+      <p data-i18n="eco.d4">本地语义记忆引擎：OS / 项目 / 学习三个记忆库，向量检索，让 AI 真的「记得你」。</p>
     </div>
     <div class="eco-card reveal">
-      <span class="ec-badge">方法论</span>
+      <span class="ec-badge" data-i18n="eco.b5">方法论</span>
       <span class="ec-icon">📚</span>
-      <h3>NPOS 文档包</h3>
-      <p>15 篇面向大众的上手文档：信息流、记忆规范、AI 安全边界、15 分钟 Quick Start。</p>
+      <h3>NPOS Docs</h3>
+      <p data-i18n="eco.d5">15 篇面向大众的上手文档：信息流、记忆规范、AI 安全边界、15 分钟 Quick Start。</p>
     </div>
     <div class="eco-card reveal">
-      <span class="ec-badge">数据安全</span>
+      <span class="ec-badge" data-i18n="eco.b6">数据安全</span>
       <span class="ec-icon">🗄️</span>
-      <h3>备份链路</h3>
-      <p>三链路每日自动备份到 NAS：库快照 + 引擎核心 + 记忆数据库，里程碑永久保留。</p>
+      <h3 data-i18n="eco.t6">备份链路</h3>
+      <p data-i18n="eco.d6">三链路每日自动备份到 NAS：库快照 + 引擎核心 + 记忆数据库，里程碑永久保留。</p>
     </div>
   </div>
-  <p class="footnote reveal"><b>生态的意义：</b>单个 App 会被淘汰，生态会自我生长。MIT 开源 + 可插拔 LLM + 纯文本存储，任何人都能在 NP-OS 上长出自己的模块。</p>
+  <p class="footnote reveal" data-i18n="eco.note"><b>生态的意义：</b>单个 App 会被淘汰，生态会自我生长。MIT 开源 + 可插拔 LLM + 纯文本存储，任何人都能在 NP-OS 上长出自己的模块。</p>
 </section>
 
 <!-- ════════ MAGIC DEMO ════════ -->
 <section class="section section-alt" id="magic">
   <p class="eyebrow reveal">The Magic Moment</p>
-  <h2 class="h2 reveal">一次输入。<span class="grad">三份秩序。</span></h2>
-  <p class="lead reveal">传统笔记要你先想清楚「放哪、打什么标签」。NP-OS 反过来：<br>唯一动作是把想法丢进 Inbox，AI 管线替你拆分一切。</p>
+  <h2 class="h2 reveal" data-i18n="magic.h2">一次输入。<span class="grad">三份秩序。</span></h2>
+  <p class="lead reveal" data-i18n="magic.lead">传统笔记要你先想清楚「放哪、打什么标签」。NP-OS 反过来：<br>唯一动作是把想法丢进 Inbox，AI 管线替你拆分一切。</p>
 
   <div class="demo reveal">
     <div class="demo-input">
@@ -134,68 +137,68 @@
       <div class="demo-card dc-1">
         <span class="dc-emoji">📓</span>
         <span class="dc-type">日记 · Journal</span>
-        <p>今天定下了项目架构</p>
+        <p data-i18n="dc1.p">今天定下了项目架构</p>
         <span class="dc-meta">→ 02-Memory/dynamic/journal</span>
       </div>
       <div class="demo-card dc-2">
         <span class="dc-emoji">✅</span>
         <span class="dc-type">待办 · Task</span>
-        <p>给服务器换证书 <b>明天到期</b></p>
-        <span class="dc-meta">→ 截止日自动换算</span>
+        <p data-i18n="dc2.p">给服务器换证书 <b>明天到期</b></p>
+        <span class="dc-meta" data-i18n="dc2.m">→ 截止日自动换算</span>
       </div>
       <div class="demo-card dc-3">
         <span class="dc-emoji">💸</span>
         <span class="dc-type">账单 · Cost</span>
-        <p>午饭 <b>¥38</b></p>
-        <span class="dc-meta">→ 月度账本自动追加</span>
+        <p data-i18n="dc3.p">午饭 <b>¥38</b></p>
+        <span class="dc-meta" data-i18n="dc3.m">→ 月度账本自动追加</span>
       </div>
     </div>
   </div>
-  <p class="footnote reveal">没有 API Key？引擎自动降级为本地规则引擎 —— <b>绝不丢失任何一条输入。</b></p>
+  <p class="footnote reveal" data-i18n="magic.note">没有 API Key？引擎自动降级为本地规则引擎 —— <b>绝不丢失任何一条输入。</b></p>
 </section>
 
 <!-- ════════ SECOND BRAIN ════════ -->
 <section class="section" id="brain">
   <p class="eyebrow reveal">Second Brain</p>
-  <h2 class="h2 reveal">五种角色，<span class="grad">一个第二大脑。</span></h2>
-  <p class="lead reveal">市面上你要订阅五个 App 才能凑齐的能力，在 NP-OS 里是同一套数据、同一条管线。</p>
+  <h2 class="h2 reveal" data-i18n="brain.h2">五种角色，<span class="grad">一个第二大脑。</span></h2>
+  <p class="lead reveal" data-i18n="brain.lead">市面上你要订阅五个 App 才能凑齐的能力，在 NP-OS 里是同一套数据、同一条管线。</p>
 
   <div class="brain-grid">
     <div class="brain-card reveal">
       <span class="br-icon">📚</span>
-      <h3>WIKI 资料库</h3>
-      <p class="br-now"><b>现在：</b>网页剪藏、PDF、学习素材自动蒸馏成结构化 Wiki 条目，双链互联，原文永不删除。</p>
-      <p class="br-future"><b>前景：</b>长成你的专属知识图谱 —— AI 回答问题时引用的是<i>你自己</i>积累的出处，而不是互联网的平均值。</p>
+      <h3 data-i18n="br1.t">WIKI 资料库</h3>
+      <p class="br-now" data-i18n="br1.n"><b>现在：</b>网页剪藏、PDF、学习素材自动蒸馏成结构化 Wiki 条目，双链互联，原文永不删除。</p>
+      <p class="br-future" data-i18n="br1.f"><b>前景：</b>长成你的专属知识图谱 —— AI 回答问题时引用的是<i>你自己</i>积累的出处，而不是互联网的平均值。</p>
     </div>
     <div class="brain-card reveal">
       <span class="br-icon">✍️</span>
-      <h3>笔记系统</h3>
-      <p class="br-now"><b>现在：</b>零门槛捕获 —— 桌面、手机、语音、CLI 随手丢，纯 Markdown 落盘，无需思考归属。</p>
-      <p class="br-future"><b>前景：</b>一份二十年后依然打得开的人生档案。平台会倒闭，纯文本不会。</p>
+      <h3 data-i18n="br2.t">笔记系统</h3>
+      <p class="br-now" data-i18n="br2.n"><b>现在：</b>零门槛捕获 —— 桌面、手机、语音、CLI 随手丢，纯 Markdown 落盘，无需思考归属。</p>
+      <p class="br-future" data-i18n="br2.f"><b>前景：</b>一份二十年后依然打得开的人生档案。平台会倒闭，纯文本不会。</p>
     </div>
     <div class="brain-card reveal">
       <span class="br-icon">🗂️</span>
-      <h3>知识管理</h3>
-      <p class="br-now"><b>现在：</b>双轨记忆自动运转 —— 动态流水每日归档，静态知识库定期蒸馏，无需手动打标签。</p>
-      <p class="br-future"><b>前景：</b>经验产生复利。每个决策、每个教训都可检索，同一个坑不会踩第二次。</p>
+      <h3 data-i18n="br3.t">知识管理</h3>
+      <p class="br-now" data-i18n="br3.n"><b>现在：</b>双轨记忆自动运转 —— 动态流水每日归档，静态知识库定期蒸馏，无需手动打标签。</p>
+      <p class="br-future" data-i18n="br3.f"><b>前景：</b>经验产生复利。每个决策、每个教训都可检索，同一个坑不会踩第二次。</p>
     </div>
     <div class="brain-card reveal">
       <span class="br-icon">🗓️</span>
-      <h3>规划助手</h3>
-      <p class="br-now"><b>现在：</b>任务、项目、目标、账单一屏总览；日报自动生成，周复盘有数据支撑。</p>
-      <p class="br-future"><b>前景：</b>人生复盘从「凭感觉」变成「凭数据」—— 时间和金钱的流向第一次清晰可见。</p>
+      <h3 data-i18n="br4.t">规划助手</h3>
+      <p class="br-now" data-i18n="br4.n"><b>现在：</b>任务、项目、目标、账单一屏总览；日报自动生成，周复盘有数据支撑。</p>
+      <p class="br-future" data-i18n="br4.f"><b>前景：</b>人生复盘从「凭感觉」变成「凭数据」—— 时间和金钱的流向第一次清晰可见。</p>
     </div>
     <div class="brain-card reveal">
       <span class="br-icon">🤖</span>
-      <h3>AI 个人助理</h3>
-      <p class="br-now"><b>现在：</b>24 小时在岗：白天随时对话捕获，夜里 23:30 自动整理归档，懂你的全部上下文。</p>
-      <p class="br-future"><b>前景：</b>AI 时代真正的私人参谋 —— 它站在你全部历史之上给建议，而且越用越懂你。</p>
+      <h3 data-i18n="br5.t">AI 个人助理</h3>
+      <p class="br-now" data-i18n="br5.n"><b>现在：</b>24 小时在岗：白天随时对话捕获，夜里 23:30 自动整理归档，懂你的全部上下文。</p>
+      <p class="br-future" data-i18n="br5.f"><b>前景：</b>AI 时代真正的私人参谋 —— 它站在你全部历史之上给建议，而且越用越懂你。</p>
     </div>
     <div class="brain-card brain-sum reveal">
       <span class="br-icon">🧠</span>
-      <h3>= 第二大脑</h3>
-      <p class="br-now">五种角色共享同一套记忆。你在笔记里写下的，规划里能引用；Wiki 里沉淀的，助理对话时记得。</p>
-      <p class="br-future"><b>这就是 OS 和 App 的区别。</b></p>
+      <h3 data-i18n="br6.t">= 第二大脑</h3>
+      <p class="br-now" data-i18n="br6.n">五种角色共享同一套记忆。你在笔记里写下的，规划里能引用；Wiki 里沉淀的，助理对话时记得。</p>
+      <p class="br-future" data-i18n="br6.f"><b>这就是 OS 和 App 的区别。</b></p>
     </div>
   </div>
 </section>
@@ -203,46 +206,46 @@
 <!-- ════════ FEATURES BENTO ════════ -->
 <section class="section section-alt" id="features">
   <p class="eyebrow reveal">Features</p>
-  <h2 class="h2 reveal">白天随手丢，<span class="grad">夜里自动长。</span></h2>
+  <h2 class="h2 reveal" data-i18n="feat.h2">白天随手丢，<span class="grad">夜里自动长。</span></h2>
 
   <div class="bento">
     <div class="bento-card big reveal">
       <span class="bc-icon">🌙</span>
-      <h3>夜间管家 Hermes</h3>
-      <p>每晚 23:30 自动夜巡：消化队列、分发归档、生成日报、滞留告警。睡眠错过？醒来自动补跑。你睡觉的时候，系统在替你整理人生。</p>
+      <h3 data-i18n="f1.t">夜间管家 Hermes</h3>
+      <p data-i18n="f1.d">每晚 23:30 自动夜巡：消化队列、分发归档、生成日报、滞留告警。睡眠错过？醒来自动补跑。你睡觉的时候，系统在替你整理人生。</p>
       <div class="bc-visual moon-visual" aria-hidden="true">
-        <div class="moon"></div><div class="zline z1">归档 ✓</div><div class="zline z2">日报 ✓</div><div class="zline z3">告警 0</div>
+        <div class="moon"></div><div class="zline z1" data-i18n="f1.z1">归档 ✓</div><div class="zline z2" data-i18n="f1.z2">日报 ✓</div><div class="zline z3" data-i18n="f1.z3">告警 0</div>
       </div>
     </div>
     <div class="bento-card reveal">
       <span class="bc-icon">🎙️</span>
-      <h3>多模态捕获</h3>
-      <p>文字、语音、PDF、网页链接 —— 手机一键投递，全部汇入同一条管线。</p>
+      <h3 data-i18n="f2.t">多模态捕获</h3>
+      <p data-i18n="f2.d">文字、语音、PDF、网页链接 —— 手机一键投递，全部汇入同一条管线。</p>
     </div>
     <div class="bento-card reveal">
       <span class="bc-icon">🧠</span>
-      <h3>双轨记忆 + 语义检索</h3>
-      <p>动态流水 + 静态知识库，接入 Hindsight 语义索引：问它「我上次为什么放弃那个方案」，它真的记得。</p>
+      <h3 data-i18n="f3.t">双轨记忆 + 语义检索</h3>
+      <p data-i18n="f3.d">动态流水 + 静态知识库，接入 Hindsight 语义索引：问它「我上次为什么放弃那个方案」，它真的记得。</p>
     </div>
     <div class="bento-card reveal">
       <span class="bc-icon">📵</span>
-      <h3>离线优先</h3>
-      <p>断网时写入本地离线账本，恢复连接自动补发。地铁里、飞机上，照常记录。</p>
+      <h3 data-i18n="f4.t">离线优先</h3>
+      <p data-i18n="f4.d">断网时写入本地离线账本，恢复连接自动补发。地铁里、飞机上，照常记录。</p>
     </div>
     <div class="bento-card reveal">
       <span class="bc-icon">🔐</span>
-      <h3>隐私铁律</h3>
-      <p>S0–S3 数据分级、<code>private: true</code> 永不外泄、AI 目录权限矩阵、画像变更必须人工确认、PIN 锁。</p>
+      <h3 data-i18n="f5.t">隐私铁律</h3>
+      <p data-i18n="f5.d">S0–S3 数据分级、<code>private: true</code> 永不外泄、AI 目录权限矩阵、画像变更必须人工确认、PIN 锁。</p>
     </div>
     <div class="bento-card reveal">
       <span class="bc-icon">🗄️</span>
-      <h3>三链路备份</h3>
-      <p>库快照 + 引擎核心 + 记忆数据库，每日自动备份到 NAS。7 天滚动保留，里程碑永久豁免。</p>
+      <h3 data-i18n="f6.t">三链路备份</h3>
+      <p data-i18n="f6.d">库快照 + 引擎核心 + 记忆数据库，每日自动备份到 NAS。7 天滚动保留，里程碑永久豁免。</p>
     </div>
     <div class="bento-card reveal">
       <span class="bc-icon">📊</span>
-      <h3>总览看板</h3>
-      <p>自带 Obsidian 插件：统计卡片、消费柱状图、任务完成环 —— 一屏看清你的生活。</p>
+      <h3 data-i18n="f7.t">总览看板</h3>
+      <p data-i18n="f7.d">自带 Obsidian 插件：统计卡片、消费柱状图、任务完成环 —— 一屏看清你的生活。</p>
     </div>
   </div>
 </section>
@@ -250,44 +253,44 @@
 <!-- ════════ LOOP / ARCHITECTURE ════════ -->
 <section class="section" id="loop">
   <p class="eyebrow reveal">The Loop</p>
-  <h2 class="h2 reveal">一条闭环，<span class="grad">从口袋到永久记忆。</span></h2>
-  <p class="lead reveal">每一步都自动发生。你唯一要做的事，在第一步就结束了。</p>
+  <h2 class="h2 reveal" data-i18n="loop.h2">一条闭环，<span class="grad">从口袋到永久记忆。</span></h2>
+  <p class="lead reveal" data-i18n="loop.lead">每一步都自动发生。你唯一要做的事，在第一步就结束了。</p>
 
   <div class="pipeline">
-    <div class="pipe-step reveal"><span class="ps-num">01</span><span class="ps-icon">📱</span><h4>捕获</h4><p>手机 App / PWA / 桌面 / CLI，想法随时投递</p></div>
+    <div class="pipe-step reveal"><span class="ps-num">01</span><span class="ps-icon">📱</span><h4 data-i18n="p1.t">捕获</h4><p data-i18n="p1.d">手机 App / PWA / 桌面 / CLI，想法随时投递</p></div>
     <div class="pipe-line reveal" aria-hidden="true"></div>
-    <div class="pipe-step reveal"><span class="ps-num">02</span><span class="ps-icon">🚪</span><h4>网关</h4><p>本地 Gateway 接收，LLM 解析五类实体</p></div>
+    <div class="pipe-step reveal"><span class="ps-num">02</span><span class="ps-icon">🚪</span><h4 data-i18n="p2.t">网关</h4><p data-i18n="p2.d">本地 Gateway 接收，LLM 解析五类实体</p></div>
     <div class="pipe-line reveal" aria-hidden="true"></div>
-    <div class="pipe-step reveal"><span class="ps-num">03</span><span class="ps-icon">📥</span><h4>收件箱</h4><p>结构化落桶，一切输入先到 Inbox</p></div>
+    <div class="pipe-step reveal"><span class="ps-num">03</span><span class="ps-icon">📥</span><h4 data-i18n="p3.t">收件箱</h4><p data-i18n="p3.d">结构化落桶，一切输入先到 Inbox</p></div>
     <div class="pipe-line reveal" aria-hidden="true"></div>
-    <div class="pipe-step reveal"><span class="ps-num">04</span><span class="ps-icon">🌙</span><h4>夜巡</h4><p>23:30 自动分发归档，生成日报</p></div>
+    <div class="pipe-step reveal"><span class="ps-num">04</span><span class="ps-icon">🌙</span><h4 data-i18n="p4.t">夜巡</h4><p data-i18n="p4.d">23:30 自动分发归档，生成日报</p></div>
     <div class="pipe-line reveal" aria-hidden="true"></div>
-    <div class="pipe-step reveal"><span class="ps-num">05</span><span class="ps-icon">🧠</span><h4>记忆</h4><p>双轨记忆沉淀，语义索引可检索</p></div>
+    <div class="pipe-step reveal"><span class="ps-num">05</span><span class="ps-icon">🧠</span><h4 data-i18n="p5.t">记忆</h4><p data-i18n="p5.d">双轨记忆沉淀，语义索引可检索</p></div>
     <div class="pipe-line reveal" aria-hidden="true"></div>
-    <div class="pipe-step reveal"><span class="ps-num">06</span><span class="ps-icon">🛡️</span><h4>备份</h4><p>三链路每日备份，数据永不丢失</p></div>
+    <div class="pipe-step reveal"><span class="ps-num">06</span><span class="ps-icon">🛡️</span><h4 data-i18n="p6.t">备份</h4><p data-i18n="p6.d">三链路每日备份，数据永不丢失</p></div>
   </div>
 </section>
 
 <!-- ════════ WHY IT MATTERS ════════ -->
 <section class="section section-alt" id="why">
   <p class="eyebrow reveal">Why It Matters</p>
-  <h2 class="h2 reveal">AI 时代，<span class="grad">记忆就是主权。</span></h2>
+  <h2 class="h2 reveal" data-i18n="why.h2">AI 时代，<span class="grad">记忆就是主权。</span></h2>
   <div class="why-grid">
     <div class="why-card reveal">
-      <h3>🏛️ 数据自有产权</h3>
-      <p>你的日记、决策、账单、教训，全部是你硬盘上的纯 Markdown 文件。不锁在任何平台里，不依赖任何订阅，二十年后依然打得开。<b>平台会倒闭，纯文本不会。</b></p>
+      <h3 data-i18n="w1.t">🏛️ 数据自有产权</h3>
+      <p data-i18n="w1.d">你的日记、决策、账单、教训，全部是你硬盘上的纯 Markdown 文件。不锁在任何平台里，不依赖任何订阅，二十年后依然打得开。<b>平台会倒闭，纯文本不会。</b></p>
     </div>
     <div class="why-card reveal">
-      <h3>📈 经验复利</h3>
-      <p>大多数人的人生经验在三个月后蒸发。NP-OS 把每一次决策、每一个教训沉淀为可检索的资产 —— 让你<b>不再重复踩同一个坑</b>，让 AI 越来越懂你。</p>
+      <h3 data-i18n="w2.t">📈 经验复利</h3>
+      <p data-i18n="w2.d">大多数人的人生经验在三个月后蒸发。NP-OS 把每一次决策、每一个教训沉淀为可检索的资产 —— 让你<b>不再重复踩同一个坑</b>，让 AI 越来越懂你。</p>
     </div>
     <div class="why-card reveal">
-      <h3>🧘 认知减负</h3>
-      <p>「先想清楚放哪」是传统笔记最大的暴政。NP-OS 把分类的认知负担全部转移给机器，你的大脑只负责一件事：<b>产生想法。</b>做减法是美德。</p>
+      <h3 data-i18n="w3.t">🧘 认知减负</h3>
+      <p data-i18n="w3.d">「先想清楚放哪」是传统笔记最大的暴政。NP-OS 把分类的认知负担全部转移给机器，你的大脑只负责一件事：<b>产生想法。</b>做减法是美德。</p>
     </div>
     <div class="why-card reveal">
-      <h3>🤝 真正的 AI 协作</h3>
-      <p>通用 AI 不认识你。NP-OS 给 AI 一份关于你的完整上下文 —— 你的目标、原则、历史、反目标 —— 让每一次对话都站在你全部经验之上，而不是从零开始。</p>
+      <h3 data-i18n="w4.t">🤝 真正的 AI 协作</h3>
+      <p data-i18n="w4.d">通用 AI 不认识你。NP-OS 给 AI 一份关于你的完整上下文 —— 你的目标、原则、历史、反目标 —— 让每一次对话都站在你全部经验之上，而不是从零开始。</p>
     </div>
   </div>
 </section>
@@ -295,27 +298,27 @@
 <!-- ════════ GROWTH ════════ -->
 <section class="section" id="growth">
   <p class="eyebrow reveal">Personal Growth</p>
-  <h2 class="h2 reveal">它改变的不是笔记，<span class="grad">是你这个人。</span></h2>
+  <h2 class="h2 reveal" data-i18n="grow.h2">它改变的不是笔记，<span class="grad">是你这个人。</span></h2>
   <div class="growth-flow">
     <div class="growth-item reveal">
-      <span class="g-week">第 1 周</span>
-      <h3>不再丢失</h3>
-      <p>每个闪念、每笔开销、每条待办都有去处。焦虑感先消失 —— 因为「我是不是忘了什么」这个后台进程被关掉了。</p>
+      <span class="g-week" data-i18n="g1.w">第 1 周</span>
+      <h3 data-i18n="g1.t">不再丢失</h3>
+      <p data-i18n="g1.d">每个闪念、每笔开销、每条待办都有去处。焦虑感先消失 —— 因为「我是不是忘了什么」这个后台进程被关掉了。</p>
     </div>
     <div class="growth-item reveal">
-      <span class="g-week">第 1 个月</span>
-      <h3>开始看见模式</h3>
-      <p>日报和消费看板让你第一次客观看见自己的时间和金钱流向。复盘从「凭感觉」变成「凭数据」。</p>
+      <span class="g-week" data-i18n="g2.w">第 1 个月</span>
+      <h3 data-i18n="g2.t">开始看见模式</h3>
+      <p data-i18n="g2.d">日报和消费看板让你第一次客观看见自己的时间和金钱流向。复盘从「凭感觉」变成「凭数据」。</p>
     </div>
     <div class="growth-item reveal">
-      <span class="g-week">第 3 个月</span>
-      <h3>决策有了底气</h3>
-      <p>「上次类似情况我是怎么决定的？结果如何？」—— 一次检索就有答案。你开始引用自己的历史，而不是重新发明轮子。</p>
+      <span class="g-week" data-i18n="g3.w">第 3 个月</span>
+      <h3 data-i18n="g3.t">决策有了底气</h3>
+      <p data-i18n="g3.d">「上次类似情况我是怎么决定的？结果如何？」—— 一次检索就有答案。你开始引用自己的历史，而不是重新发明轮子。</p>
     </div>
     <div class="growth-item reveal">
-      <span class="g-week">第 1 年</span>
-      <h3>拥有系统资产</h3>
-      <p>一座持续生长的个人知识库、一套了解你的 AI 协作系统、一份可复盘的人生档案。这是<b>留给未来自己最好的礼物。</b></p>
+      <span class="g-week" data-i18n="g4.w">第 1 年</span>
+      <h3 data-i18n="g4.t">拥有系统资产</h3>
+      <p data-i18n="g4.d">一座持续生长的个人知识库、一套了解你的 AI 协作系统、一份可复盘的人生档案。这是<b>留给未来自己最好的礼物。</b></p>
     </div>
   </div>
 </section>
@@ -323,30 +326,30 @@
 <!-- ════════ TECH ════════ -->
 <section class="section section-alt" id="tech">
   <p class="eyebrow reveal">Under The Hood</p>
-  <h2 class="h2 reveal">克制的技术，<span class="grad">为了二十年后还能跑。</span></h2>
-  <p class="lead reveal">没有花哨框架，没有供应商锁定。每个技术选型都回答同一个问题：十年后它还在吗？</p>
+  <h2 class="h2 reveal" data-i18n="tech.h2">克制的技术，<span class="grad">为了二十年后还能跑。</span></h2>
+  <p class="lead reveal" data-i18n="tech.lead">没有花哨框架，没有供应商锁定。每个技术选型都回答同一个问题：十年后它还在吗？</p>
 
   <div class="tech-grid">
-    <div class="tech-card reveal"><h4>📦 存储层</h4><p><b>纯 Markdown + YAML</b></p><span>人类可读、Git 友好、永不过时的开放格式</span></div>
-    <div class="tech-card reveal"><h4>⚙️ 引擎层</h4><p><b>Python 标准库（零依赖）</b></p><span>macOS 自带环境直接跑，无需 pip install 任何东西</span></div>
-    <div class="tech-card reveal"><h4>🖥️ 显示层</h4><p><b>Obsidian + 自带插件</b></p><span>可替换的显示层，个人使用免费</span></div>
-    <div class="tech-card reveal"><h4>📱 移动端</h4><p><b>Expo 54 · React Native · PWA</b></p><span>OSMIND App：iOS / Android / 浏览器全覆盖</span></div>
-    <div class="tech-card reveal"><h4>🤖 智能层</h4><p><b>可插拔 LLM</b></p><span>默认 DeepSeek 高性价比，一行配置切换任意 OpenAI 兼容 API</span></div>
-    <div class="tech-card reveal"><h4>🧠 记忆层</h4><p><b>Hindsight 语义引擎</b></p><span>本地 Docker 容器，向量检索，数据不出家门</span></div>
-    <div class="tech-card reveal"><h4>⏰ 调度层</h4><p><b>macOS launchd</b></p><span>系统级定时，睡眠错过自动补跑，无守护进程</span></div>
-    <div class="tech-card reveal"><h4>🌐 网关层</h4><p><b>本地 HTTP Gateway</b></p><span>手机唯一写入口，配对 Token 鉴权，局域网即用</span></div>
+    <div class="tech-card reveal"><h4 data-i18n="tc1.h">📦 存储层</h4><p data-i18n="tc1.p"><b>纯 Markdown + YAML</b></p><span data-i18n="tc1.s">人类可读、Git 友好、永不过时的开放格式</span></div>
+    <div class="tech-card reveal"><h4 data-i18n="tc2.h">⚙️ 引擎层</h4><p data-i18n="tc2.p"><b>Python 标准库（零依赖）</b></p><span data-i18n="tc2.s">macOS 自带环境直接跑，无需 pip install 任何东西</span></div>
+    <div class="tech-card reveal"><h4 data-i18n="tc3.h">🖥️ 显示层</h4><p data-i18n="tc3.p"><b>Obsidian + 自带插件</b></p><span data-i18n="tc3.s">可替换的显示层，个人使用免费</span></div>
+    <div class="tech-card reveal"><h4 data-i18n="tc4.h">📱 移动端</h4><p data-i18n="tc4.p"><b>Expo 54 · React Native · PWA</b></p><span data-i18n="tc4.s">OSMIND App：iOS / Android / 浏览器全覆盖</span></div>
+    <div class="tech-card reveal"><h4 data-i18n="tc5.h">🤖 智能层</h4><p data-i18n="tc5.p"><b>可插拔 LLM</b></p><span data-i18n="tc5.s">默认 DeepSeek 高性价比，一行配置切换任意 OpenAI 兼容 API</span></div>
+    <div class="tech-card reveal"><h4 data-i18n="tc6.h">🧠 记忆层</h4><p data-i18n="tc6.p"><b>Hindsight 语义引擎</b></p><span data-i18n="tc6.s">本地 Docker 容器，向量检索，数据不出家门</span></div>
+    <div class="tech-card reveal"><h4 data-i18n="tc7.h">⏰ 调度层</h4><p data-i18n="tc7.p"><b>macOS launchd</b></p><span data-i18n="tc7.s">系统级定时，睡眠错过自动补跑，无守护进程</span></div>
+    <div class="tech-card reveal"><h4 data-i18n="tc8.h">🌐 网关层</h4><p data-i18n="tc8.p"><b>本地 HTTP Gateway</b></p><span data-i18n="tc8.s">手机唯一写入口，配对 Token 鉴权，局域网即用</span></div>
   </div>
 
   <div class="coverage reveal">
-    <h3>📡 便利覆盖：在哪都能用</h3>
+    <h3 data-i18n="cov.h3">📡 便利覆盖：在哪都能用</h3>
     <div class="coverage-chips">
-      <span class="chip">💻 Mac 桌面插件</span>
-      <span class="chip">📱 iPhone / Android App</span>
-      <span class="chip">🌐 浏览器 PWA</span>
-      <span class="chip">⌨️ 终端 CLI</span>
-      <span class="chip">🗣️ 语音输入</span>
-      <span class="chip">🔗 iOS 快捷指令</span>
-      <span class="chip">✈️ 完全离线可用</span>
+      <span class="chip" data-i18n="chip.1">💻 Mac 桌面插件</span>
+      <span class="chip" data-i18n="chip.2">📱 iPhone / Android App</span>
+      <span class="chip" data-i18n="chip.3">🌐 浏览器 PWA</span>
+      <span class="chip" data-i18n="chip.4">⌨️ 终端 CLI</span>
+      <span class="chip" data-i18n="chip.5">🗣️ 语音输入</span>
+      <span class="chip" data-i18n="chip.6">🔗 iOS 快捷指令</span>
+      <span class="chip" data-i18n="chip.7">✈️ 完全离线可用</span>
     </div>
   </div>
 </section>
@@ -354,10 +357,10 @@
 <!-- ════════ COMPARE ════════ -->
 <section class="section" id="compare">
   <p class="eyebrow reveal">Value</p>
-  <h2 class="h2 reveal">一杯咖啡的成本，<span class="grad">一个团队的能力。</span></h2>
+  <h2 class="h2 reveal" data-i18n="cmp.h2">一杯咖啡的成本，<span class="grad">一个团队的能力。</span></h2>
 
   <div class="compare-wrap reveal">
-    <table class="compare-table">
+    <table class="compare-table" data-i18n="cmp.table">
       <thead>
         <tr>
           <th>&nbsp;</th>
@@ -380,30 +383,30 @@
       </tbody>
     </table>
   </div>
-  <p class="footnote reveal">参考价按 2026 年公开订阅价估算。NP-OS 软件本体 MIT 协议永久免费，唯一可选成本是按量计费的 LLM API（高性价比模型每月通常只需几块钱）。</p>
+  <p class="footnote reveal" data-i18n="cmp.note">参考价按 2026 年公开订阅价估算。NP-OS 软件本体 MIT 协议永久免费，唯一可选成本是按量计费的 LLM API（高性价比模型每月通常只需几块钱）。</p>
 </section>
 
 <!-- ════════ PHILOSOPHY ════════ -->
 <section class="section philosophy" id="philosophy">
   <div class="phil-inner reveal">
     <span class="phil-mark">🧠</span>
-    <blockquote>做减法是美德。<br>系统包裹复杂，把简单还给你。</blockquote>
-    <p>NP-OS 的每一个设计决定，都在回答一个问题：<br>能不能让用户少做一件事？</p>
+    <blockquote data-i18n="phil.q">做减法是美德。<br>系统包裹复杂，把简单还给你。</blockquote>
+    <p data-i18n="phil.p">NP-OS 的每一个设计决定，都在回答一个问题：<br>能不能让用户少做一件事？</p>
   </div>
 </section>
 
 <!-- ════════ CTA ════════ -->
 <section class="section cta" id="start">
-  <h2 class="h2 reveal">五分钟，<span class="grad">启动你的第二大脑。</span></h2>
+  <h2 class="h2 reveal" data-i18n="cta.h2">五分钟，<span class="grad">启动你的第二大脑。</span></h2>
   <div class="terminal reveal">
     <div class="terminal-bar"><i></i><i></i><i></i><span>Terminal</span></div>
-    <pre><code><span class="t-dim"># 克隆并安装 —— 交互式向导自动配置一切</span>
+    <pre><code><span class="t-dim" data-i18n="cta.cmt"># 克隆并安装 —— 交互式向导自动配置一切</span>
 <span class="t-green">$</span> git clone https://github.com/cht8987/personal-os.git
 <span class="t-green">$</span> cd personal-os && ./install.sh <span class="t-cursor">▊</span></code></pre>
   </div>
   <div class="cta-actions reveal">
-    <a class="btn btn-primary" href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener">🧠 personal-os — 桌面端核心</a>
-    <a class="btn btn-ghost" href="https://github.com/cht8987/osmind-app" target="_blank" rel="noopener">📱 osmind-app — 移动端入口</a>
+    <a class="btn btn-primary" href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener" data-i18n="cta.b1">🧠 personal-os — 桌面端核心</a>
+    <a class="btn btn-ghost" href="https://github.com/cht8987/osmind-app" target="_blank" rel="noopener" data-i18n="cta.b2">📱 osmind-app — 移动端入口</a>
   </div>
 </section>
 
@@ -418,6 +421,7 @@
   <p class="footer-dim">An AI-powered second brain on plain Markdown — capture anything, let agents organize everything.</p>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

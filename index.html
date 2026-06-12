@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LotusOS · 莲 OS — 你的个人 AI 操作系统</title>
-<meta name="description" content="LotusOS（Personal OS）— 基于纯 Markdown 的 AI 第二大脑。你只管丢想法，系统自动分类、归档、提醒、沉淀。开源 · 零依赖 · 多端联动。">
-<meta property="og:title" content="LotusOS · 你的个人 AI 操作系统">
-<meta property="og:description" content="一次输入，自动变成日记、待办、账单。开源的 AI 第二大脑。">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>">
+<title>NP-OS · NEW PERSONAL OS — 你的第二大脑操作系统</title>
+<meta name="description" content="NP-OS（NEW PERSONAL OS）— 开源个人 AI 操作系统生态。第二大脑 · WIKI 知识库 · 笔记 · 知识管理 · 规划 · 个人助理，长在纯 Markdown 上，数据永远属于你。">
+<meta property="og:title" content="NP-OS · NEW PERSONAL OS — 你的第二大脑操作系统">
+<meta property="og:description" content="一次输入，自动变成日记、待办、账单。开源的个人 AI 操作系统生态。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,12 +15,13 @@
 <!-- ════════ NAV ════════ -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#top" class="nav-logo">🪷 <span>LotusOS</span></a>
+    <a href="#top" class="nav-logo">🧠 <span>NP-OS</span></a>
     <div class="nav-links">
+      <a href="#ecosystem">生态</a>
       <a href="#magic">体验</a>
+      <a href="#brain">第二大脑</a>
       <a href="#features">功能</a>
       <a href="#loop">架构</a>
-      <a href="#growth">成长</a>
       <a href="#tech">技术</a>
       <a href="#compare">性价比</a>
     </div>
@@ -34,48 +35,94 @@
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
 
-  <div class="lotus" aria-hidden="true">
-    <svg viewBox="0 0 200 200" class="lotus-svg">
-      <g class="petals">
-        <ellipse class="petal p1" cx="100" cy="62" rx="16" ry="38"/>
-        <ellipse class="petal p2" cx="100" cy="62" rx="16" ry="38" transform="rotate(45 100 100)"/>
-        <ellipse class="petal p3" cx="100" cy="62" rx="16" ry="38" transform="rotate(-45 100 100)"/>
-        <ellipse class="petal p4" cx="100" cy="62" rx="16" ry="38" transform="rotate(90 100 100)"/>
-        <ellipse class="petal p5" cx="100" cy="62" rx="16" ry="38" transform="rotate(-90 100 100)"/>
-        <ellipse class="petal p6" cx="100" cy="62" rx="14" ry="30" transform="rotate(22 100 100)"/>
-        <ellipse class="petal p7" cx="100" cy="62" rx="14" ry="30" transform="rotate(-22 100 100)"/>
-      </g>
-      <circle class="lotus-core" cx="100" cy="100" r="14"/>
+  <div class="osmark" aria-hidden="true">
+    <svg viewBox="0 0 200 200" class="osmark-svg">
+      <circle class="ring r1" cx="100" cy="100" r="34"/>
+      <circle class="ring r2" cx="100" cy="100" r="58"/>
+      <circle class="ring r3" cx="100" cy="100" r="84"/>
+      <g class="orbit o1"><circle class="node n1" cx="100" cy="42" r="6"/></g>
+      <g class="orbit o2"><circle class="node n2" cx="100" cy="158" r="5"/></g>
+      <g class="orbit o3"><circle class="node n3" cx="184" cy="100" r="4.5"/></g>
+      <circle class="osmark-core" cx="100" cy="100" r="15"/>
     </svg>
   </div>
 
-  <p class="hero-eyebrow reveal">PERSONAL OS · 开源个人 AI 操作系统</p>
+  <p class="hero-eyebrow reveal">NEW PERSONAL OS · 开源个人 AI 操作系统生态</p>
   <h1 class="hero-title">
-    <span class="line reveal d1">你只管丢想法，</span>
-    <span class="line grad reveal d2">剩下的交给系统。</span>
+    <span class="line reveal d1">不止是笔记，</span>
+    <span class="line grad reveal d2">是你的第二大脑 OS。</span>
   </h1>
   <p class="hero-sub reveal d3">
-    LotusOS 是一个长在纯 Markdown 上的 AI 第二大脑。<br>
-    自动分类 · 夜间归档 · 永久记忆 · 多端联动 —— 你的数据，永远属于你。
+    NP-OS 把 WIKI 知识库、笔记、知识管理、规划与 AI 个人助理<br>
+    整合成一个长在纯 Markdown 上的操作系统 —— 你只管丢想法，数据永远属于你。
   </p>
   <div class="hero-actions reveal d4">
     <a class="btn btn-primary" href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener">开始使用 — 免费开源</a>
-    <a class="btn btn-ghost" href="#magic">看看它怎么工作 ↓</a>
+    <a class="btn btn-ghost" href="#ecosystem">了解 OS 生态 ↓</a>
   </div>
   <div class="hero-stats reveal d5">
     <div class="stat"><span class="stat-num" data-count="0">0</span><span class="stat-label">第三方依赖</span></div>
+    <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">大生态组件</span></div>
     <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">类实体自动分流</span></div>
-    <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">链路自动备份</span></div>
     <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% 数据自有产权</span></div>
   </div>
   <div class="scroll-hint" aria-hidden="true"><span></span></div>
 </header>
 
+<!-- ════════ ECOSYSTEM ════════ -->
+<section class="section" id="ecosystem">
+  <p class="eyebrow reveal">The Ecosystem</p>
+  <h2 class="h2 reveal">不是一个 App，<span class="grad">是一个 OS 生态。</span></h2>
+  <p class="lead reveal">桌面核心、移动终端、网关、记忆引擎、方法论、备份链路 —— 六大组件各司其职，<br>每一层都可替换、可扩展、可自托管。这才叫操作系统。</p>
+
+  <div class="eco-grid">
+    <a class="eco-card eco-main reveal" href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener">
+      <span class="ec-badge">核心 · v0.7.1</span>
+      <span class="ec-icon">🧠</span>
+      <h3>personal-os</h3>
+      <p>桌面端核心系统：vault 模板 + rtk 零依赖引擎 + 自带 Obsidian 插件 + Hermes 夜间管家 + install.sh 一键安装。</p>
+      <span class="ec-link">github.com/cht8987/personal-os ↗</span>
+    </a>
+    <a class="eco-card reveal" href="https://github.com/cht8987/osmind-app" target="_blank" rel="noopener">
+      <span class="ec-badge">移动端</span>
+      <span class="ec-icon">📱</span>
+      <h3>OSMIND App</h3>
+      <p>口袋里的捕获终端：文字 / 语音 / PDF / 网页一键投递，离线账本，AI 聊天，PWA 装进主屏幕。</p>
+      <span class="ec-link">github.com/cht8987/osmind-app ↗</span>
+    </a>
+    <div class="eco-card reveal">
+      <span class="ec-badge">网关</span>
+      <span class="ec-icon">🚪</span>
+      <h3>OSMIND Gateway</h3>
+      <p>手机的唯一写入口：本地 HTTP 网关，配对 Token 鉴权，内容提取管线，输入永不丢失。</p>
+    </div>
+    <div class="eco-card reveal">
+      <span class="ec-badge">记忆引擎</span>
+      <span class="ec-icon">🔍</span>
+      <h3>Hindsight</h3>
+      <p>本地语义记忆引擎：OS / 项目 / 学习三个记忆库，向量检索，让 AI 真的「记得你」。</p>
+    </div>
+    <div class="eco-card reveal">
+      <span class="ec-badge">方法论</span>
+      <span class="ec-icon">📚</span>
+      <h3>NPOS 文档包</h3>
+      <p>15 篇面向大众的上手文档：信息流、记忆规范、AI 安全边界、15 分钟 Quick Start。</p>
+    </div>
+    <div class="eco-card reveal">
+      <span class="ec-badge">数据安全</span>
+      <span class="ec-icon">🗄️</span>
+      <h3>备份链路</h3>
+      <p>三链路每日自动备份到 NAS：库快照 + 引擎核心 + 记忆数据库，里程碑永久保留。</p>
+    </div>
+  </div>
+  <p class="footnote reveal"><b>生态的意义：</b>单个 App 会被淘汰，生态会自我生长。MIT 开源 + 可插拔 LLM + 纯文本存储，任何人都能在 NP-OS 上长出自己的模块。</p>
+</section>
+
 <!-- ════════ MAGIC DEMO ════════ -->
-<section class="section" id="magic">
+<section class="section section-alt" id="magic">
   <p class="eyebrow reveal">The Magic Moment</p>
   <h2 class="h2 reveal">一次输入。<span class="grad">三份秩序。</span></h2>
-  <p class="lead reveal">传统笔记要你先想清楚「放哪、打什么标签」。LotusOS 反过来：<br>唯一动作是把想法丢进 Inbox，AI 管线替你拆分一切。</p>
+  <p class="lead reveal">传统笔记要你先想清楚「放哪、打什么标签」。NP-OS 反过来：<br>唯一动作是把想法丢进 Inbox，AI 管线替你拆分一切。</p>
 
   <div class="demo reveal">
     <div class="demo-input">
@@ -105,6 +152,52 @@
     </div>
   </div>
   <p class="footnote reveal">没有 API Key？引擎自动降级为本地规则引擎 —— <b>绝不丢失任何一条输入。</b></p>
+</section>
+
+<!-- ════════ SECOND BRAIN ════════ -->
+<section class="section" id="brain">
+  <p class="eyebrow reveal">Second Brain</p>
+  <h2 class="h2 reveal">五种角色，<span class="grad">一个第二大脑。</span></h2>
+  <p class="lead reveal">市面上你要订阅五个 App 才能凑齐的能力，在 NP-OS 里是同一套数据、同一条管线。</p>
+
+  <div class="brain-grid">
+    <div class="brain-card reveal">
+      <span class="br-icon">📚</span>
+      <h3>WIKI 资料库</h3>
+      <p class="br-now"><b>现在：</b>网页剪藏、PDF、学习素材自动蒸馏成结构化 Wiki 条目，双链互联，原文永不删除。</p>
+      <p class="br-future"><b>前景：</b>长成你的专属知识图谱 —— AI 回答问题时引用的是<i>你自己</i>积累的出处，而不是互联网的平均值。</p>
+    </div>
+    <div class="brain-card reveal">
+      <span class="br-icon">✍️</span>
+      <h3>笔记系统</h3>
+      <p class="br-now"><b>现在：</b>零门槛捕获 —— 桌面、手机、语音、CLI 随手丢，纯 Markdown 落盘，无需思考归属。</p>
+      <p class="br-future"><b>前景：</b>一份二十年后依然打得开的人生档案。平台会倒闭，纯文本不会。</p>
+    </div>
+    <div class="brain-card reveal">
+      <span class="br-icon">🗂️</span>
+      <h3>知识管理</h3>
+      <p class="br-now"><b>现在：</b>双轨记忆自动运转 —— 动态流水每日归档，静态知识库定期蒸馏，无需手动打标签。</p>
+      <p class="br-future"><b>前景：</b>经验产生复利。每个决策、每个教训都可检索，同一个坑不会踩第二次。</p>
+    </div>
+    <div class="brain-card reveal">
+      <span class="br-icon">🗓️</span>
+      <h3>规划助手</h3>
+      <p class="br-now"><b>现在：</b>任务、项目、目标、账单一屏总览；日报自动生成，周复盘有数据支撑。</p>
+      <p class="br-future"><b>前景：</b>人生复盘从「凭感觉」变成「凭数据」—— 时间和金钱的流向第一次清晰可见。</p>
+    </div>
+    <div class="brain-card reveal">
+      <span class="br-icon">🤖</span>
+      <h3>AI 个人助理</h3>
+      <p class="br-now"><b>现在：</b>24 小时在岗：白天随时对话捕获，夜里 23:30 自动整理归档，懂你的全部上下文。</p>
+      <p class="br-future"><b>前景：</b>AI 时代真正的私人参谋 —— 它站在你全部历史之上给建议，而且越用越懂你。</p>
+    </div>
+    <div class="brain-card brain-sum reveal">
+      <span class="br-icon">🧠</span>
+      <h3>= 第二大脑</h3>
+      <p class="br-now">五种角色共享同一套记忆。你在笔记里写下的，规划里能引用；Wiki 里沉淀的，助理对话时记得。</p>
+      <p class="br-future"><b>这就是 OS 和 App 的区别。</b></p>
+    </div>
+  </div>
 </section>
 
 <!-- ════════ FEATURES BENTO ════════ -->
@@ -186,15 +279,15 @@
     </div>
     <div class="why-card reveal">
       <h3>📈 经验复利</h3>
-      <p>大多数人的人生经验在三个月后蒸发。LotusOS 把每一次决策、每一个教训沉淀为可检索的资产 —— 让你<b>不再重复踩同一个坑</b>，让 AI 越来越懂你。</p>
+      <p>大多数人的人生经验在三个月后蒸发。NP-OS 把每一次决策、每一个教训沉淀为可检索的资产 —— 让你<b>不再重复踩同一个坑</b>，让 AI 越来越懂你。</p>
     </div>
     <div class="why-card reveal">
       <h3>🧘 认知减负</h3>
-      <p>「先想清楚放哪」是传统笔记最大的暴政。LotusOS 把分类的认知负担全部转移给机器，你的大脑只负责一件事：<b>产生想法。</b>做减法是美德。</p>
+      <p>「先想清楚放哪」是传统笔记最大的暴政。NP-OS 把分类的认知负担全部转移给机器，你的大脑只负责一件事：<b>产生想法。</b>做减法是美德。</p>
     </div>
     <div class="why-card reveal">
       <h3>🤝 真正的 AI 协作</h3>
-      <p>通用 AI 不认识你。LotusOS 给 AI 一份关于你的完整上下文 —— 你的目标、原则、历史、反目标 —— 让每一次对话都站在你 14 年经验之上，而不是从零开始。</p>
+      <p>通用 AI 不认识你。NP-OS 给 AI 一份关于你的完整上下文 —— 你的目标、原则、历史、反目标 —— 让每一次对话都站在你全部经验之上，而不是从零开始。</p>
     </div>
   </div>
 </section>
@@ -268,7 +361,7 @@
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th class="hl">🪷 LotusOS</th>
+          <th class="hl">🧠 NP-OS</th>
           <th>Notion AI</th>
           <th>Evernote</th>
           <th>人工助理</th>
@@ -287,21 +380,21 @@
       </tbody>
     </table>
   </div>
-  <p class="footnote reveal">参考价按 2026 年公开订阅价估算。LotusOS 软件本体 MIT 协议永久免费，唯一可选成本是按量计费的 LLM API（高性价比模型每月通常只需几块钱）。</p>
+  <p class="footnote reveal">参考价按 2026 年公开订阅价估算。NP-OS 软件本体 MIT 协议永久免费，唯一可选成本是按量计费的 LLM API（高性价比模型每月通常只需几块钱）。</p>
 </section>
 
 <!-- ════════ PHILOSOPHY ════════ -->
 <section class="section philosophy" id="philosophy">
   <div class="phil-inner reveal">
-    <span class="phil-lotus">🪷</span>
+    <span class="phil-mark">🧠</span>
     <blockquote>做减法是美德。<br>系统包裹复杂，把简单还给你。</blockquote>
-    <p>LotusOS 的每一个设计决定，都在回答一个问题：<br>能不能让用户少做一件事？</p>
+    <p>NP-OS 的每一个设计决定，都在回答一个问题：<br>能不能让用户少做一件事？</p>
   </div>
 </section>
 
 <!-- ════════ CTA ════════ -->
 <section class="section cta" id="start">
-  <h2 class="h2 reveal">五分钟，<span class="grad">种下你的莲。</span></h2>
+  <h2 class="h2 reveal">五分钟，<span class="grad">启动你的第二大脑。</span></h2>
   <div class="terminal reveal">
     <div class="terminal-bar"><i></i><i></i><i></i><span>Terminal</span></div>
     <pre><code><span class="t-dim"># 克隆并安装 —— 交互式向导自动配置一切</span>
@@ -316,7 +409,7 @@
 
 <!-- ════════ FOOTER ════════ -->
 <footer class="footer">
-  <p>🪷 <b>LotusOS</b> · Personal OS</p>
+  <p>🧠 <b>NP-OS</b> · NEW PERSONAL OS</p>
   <p class="footer-links">
     <a href="https://github.com/cht8987/personal-os" target="_blank" rel="noopener">GitHub</a> ·
     <a href="https://github.com/cht8987/osmind-app" target="_blank" rel="noopener">Mobile App</a> ·

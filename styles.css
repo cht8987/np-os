@@ -1,11 +1,11 @@
-/* ═══════════ LotusOS — Apple-style product page ═══════════ */
+/* ═══════════ NP-OS · NEW PERSONAL OS — Apple-style product page ═══════════ */
 :root {
   --bg: #050507;
   --bg-alt: #0d0d12;
   --text: #f5f5f7;
   --text-dim: #a1a1aa;
   --text-faint: #5b5b66;
-  --pink: #ff9ec7;
+  --pink: #7dd3fc;
   --violet: #a78bfa;
   --teal: #5eead4;
   --grad: linear-gradient(100deg, var(--pink), var(--violet) 50%, var(--teal));
@@ -76,19 +76,25 @@ a { color: inherit; text-decoration: none; }
 .orb-3 { width: 380px; height: 380px; background: var(--teal); top: 40%; left: 60%; opacity: .18; animation: drift 22s ease-in-out infinite alternate; }
 @keyframes drift { from { transform: translate(0,0) scale(1); } to { transform: translate(60px,40px) scale(1.15); } }
 
-.lotus { width: 130px; margin-bottom: 8px; }
-.lotus-svg { width: 100%; overflow: visible; }
-.petal {
-  fill: rgba(255,158,199,.16);
-  stroke: rgba(255,158,199,.65); stroke-width: 1.4;
-  transform-origin: 100px 100px;
-  animation: bloom 2.4s cubic-bezier(.2,.7,.3,1.05) both;
+.osmark { width: 150px; margin-bottom: 4px; }
+.osmark-svg { width: 100%; overflow: visible; }
+.ring {
+  fill: none; stroke-width: 1.3; transform-origin: 100px 100px;
+  animation: ringIn 1.8s cubic-bezier(.2,.7,.3,1.05) both;
 }
-.p2,.p3 { animation-delay: .25s; fill: rgba(167,139,250,.14); stroke: rgba(167,139,250,.6); }
-.p4,.p5 { animation-delay: .5s; fill: rgba(94,234,212,.10); stroke: rgba(94,234,212,.5); }
-.p6,.p7 { animation-delay: .75s; }
-.lotus-core { fill: rgba(255,225,160,.85); filter: drop-shadow(0 0 18px rgba(255,210,130,.8)); animation: corePulse 3.5s ease-in-out infinite; }
-@keyframes bloom { from { transform: scale(.1) rotate(0deg); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.r1 { stroke: rgba(125,211,252,.7); }
+.r2 { stroke: rgba(167,139,250,.55); animation-delay: .25s; }
+.r3 { stroke: rgba(94,234,212,.4); animation-delay: .5s; }
+.orbit { transform-origin: 100px 100px; }
+.o1 { animation: spin 9s linear infinite; }
+.o2 { animation: spin 14s linear infinite reverse; }
+.o3 { animation: spin 20s linear infinite; }
+.n1 { fill: var(--pink); filter: drop-shadow(0 0 8px rgba(125,211,252,.9)); }
+.n2 { fill: var(--violet); filter: drop-shadow(0 0 8px rgba(167,139,250,.9)); }
+.n3 { fill: var(--teal); filter: drop-shadow(0 0 8px rgba(94,234,212,.9)); }
+.osmark-core { fill: rgba(245,245,247,.95); filter: drop-shadow(0 0 20px rgba(167,139,250,.9)); animation: corePulse 3.5s ease-in-out infinite; }
+@keyframes ringIn { from { transform: scale(.2); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+@keyframes spin { to { transform: rotate(360deg); } }
 @keyframes corePulse { 0%,100% { opacity: .8; } 50% { opacity: 1; } }
 
 .hero-eyebrow { font-size: 14px; letter-spacing: 3px; color: var(--text-dim); text-transform: uppercase; margin-bottom: 18px; }
@@ -253,7 +259,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Philosophy ── */
 .philosophy { position: relative; }
 .phil-inner { max-width: 760px; margin: 0 auto; }
-.phil-lotus { font-size: 54px; display: block; margin-bottom: 28px; animation: corePulse 4s ease-in-out infinite; }
+.phil-mark { font-size: 54px; display: block; margin-bottom: 28px; animation: corePulse 4s ease-in-out infinite; }
 .philosophy blockquote { font-size: clamp(26px, 4.5vw, 44px); font-weight: 800; line-height: 1.3; letter-spacing: -.5px; background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .philosophy p { margin-top: 26px; color: var(--text-dim); font-size: clamp(15px, 2vw, 18px); }
 
@@ -272,6 +278,45 @@ a { color: inherit; text-decoration: none; }
 .t-dim { color: var(--text-faint); } .t-green { color: var(--teal); }
 .t-cursor { animation: blink 1s steps(1) infinite; color: var(--teal); }
 .cta-actions { margin-top: 36px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+
+
+/* ── Ecosystem grid ── */
+.eco-grid { margin-top: 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+@media (max-width: 880px) { .eco-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .eco-grid { grid-template-columns: 1fr; } }
+.eco-card {
+  display: block; background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 28px 26px; transition: transform .35s, border-color .35s, background .35s; position: relative;
+}
+.eco-card:hover { transform: translateY(-5px); border-color: rgba(125,211,252,.45); background: rgba(255,255,255,.07); }
+.eco-main { border-color: rgba(167,139,250,.45); background: linear-gradient(180deg, rgba(167,139,250,.10), rgba(125,211,252,.05)); }
+.ec-badge {
+  position: absolute; top: 22px; right: 22px; font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  padding: 4px 12px; border-radius: 99px; background: rgba(255,255,255,.08); border: 1px solid var(--card-border); color: var(--text-dim);
+}
+.eco-main .ec-badge { background: var(--grad); color: #0a0a0c; border: none; }
+.ec-icon { font-size: 32px; display: block; margin-bottom: 14px; }
+.eco-card h3 { font-size: 19px; margin-bottom: 8px; font-weight: 700; }
+.eco-card p { font-size: 14px; color: var(--text-dim); }
+.ec-link { display: block; margin-top: 14px; font-size: 12.5px; font-family: ui-monospace, "SF Mono", monospace; background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* ── Second brain grid ── */
+.brain-grid { margin-top: 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+@media (max-width: 880px) { .brain-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .brain-grid { grid-template-columns: 1fr; } }
+.brain-card {
+  background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 28px 26px; transition: transform .35s, border-color .35s;
+  display: flex; flex-direction: column;
+}
+.brain-card:hover { transform: translateY(-5px); border-color: rgba(167,139,250,.45); }
+.br-icon { font-size: 30px; display: block; margin-bottom: 12px; }
+.brain-card h3 { font-size: 19px; margin-bottom: 12px; font-weight: 700; }
+.br-now { font-size: 13.5px; color: var(--text-dim); margin-bottom: 10px; }
+.br-now b, .br-future b { color: var(--text); }
+.br-future { font-size: 13.5px; color: var(--text-dim); padding-top: 10px; border-top: 1px dashed rgba(255,255,255,.1); margin-top: auto; }
+.br-future b { background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.brain-sum { border-color: rgba(94,234,212,.4); background: linear-gradient(180deg, rgba(94,234,212,.08), rgba(167,139,250,.06)); }
 
 /* ── Footer ── */
 .footer { text-align: center; padding: 56px 24px 64px; border-top: 1px solid rgba(255,255,255,.06); }

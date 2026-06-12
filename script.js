@@ -1,4 +1,4 @@
-/* ═══════════ LotusOS — scroll & motion ═══════════ */
+/* ═══════════ NP-OS — scroll & motion ═══════════ */
 
 // Reveal on scroll
 const io = new IntersectionObserver(
